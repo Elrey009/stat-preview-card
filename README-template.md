@@ -18,8 +18,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/Elrey009/stat-preview-card)
+- Live Site URL: [Add live site URL here](https://stat-preview-card-phi.vercel.app/)
 
 ### Built with
 
@@ -47,5 +47,5 @@ To see how you can add code snippets, see below:
 ## Author
 
 - Website - [Daniel Ejike](https://www.your-site.com)
-- Frontend Mentor - [@Elrey009](https://www.frontendmentor.io/solutions/responsive-product-preview-card-UKzo-kdMl5)
+- Frontend Mentor - [@Elrey009](https://www.frontendmentor.io/solutions/responsive-stats-preview-card-RAO_EwR0PO)
 - Twitter - [@da_ni_lo009](https://twitter.com/da_ni_lo009)
