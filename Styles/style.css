@@ -35,15 +35,22 @@
   margin: -1px;
 }
 
+body {
+  background-color: var(--very-dark-blue);
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 0.94rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
 /* ? Mobile screen */
 
 .hero-card {
   display: flex;
-  min-height: 100vh;
   width: 90%;
-  margin: 130px 100px 130px 100px;
+  margin: 200px 100px 120px 100px;
   padding: 10px;
-  background-color: var(--very-dark-blue);
   justify-content: center;
   align-items: center;
 }
@@ -52,18 +59,19 @@
   background-color: var(--dark-desaturated-blue);
   padding: 29px;
   justify-content: center;
-  flex-direction: column;
-  height: 300px;
-  flex-basis: 25%;
+  height: 390px;
+  flex-shrink: 1;
+  max-width: 100%;
+  flex-basis: 30%;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
 img {
   background-repeat: no-repeat;
   object-fit: cover;
-  justify-content: center;
-  height: 358px;
-  flex-basis: 75%;
+  flex-shrink: 1;
+  max-width: 100%;
+  flex-basis: 60%;
   display: block;
   mix-blend-mode: multiply;
   opacity: 0.7;
@@ -79,10 +87,10 @@ img {
   font-family: "Lexend Deca", sans-serif;
   font-weight: lighter;
   padding-left: 1rem;
+  padding-right: 1rem;
   color: var(--Slightly-transparent-white);
   line-height: 1.5;
-  padding-bottom: 2rem;
-  font-size: 14px;
+  font-size: 18px;
   text-align: left;
 }
 
@@ -95,7 +103,7 @@ p {
   font-family: "Inter", sans-serif;
   font-weight: 600;
   text-align: center;
-  font-size: 18px;
+  font-size: 20px;
   margin-top: 0.5rem;
   margin-bottom: 1rem;
 }
@@ -103,7 +111,7 @@ p {
 .x {
   display: block;
   text-align: center;
-  font-size: 10px;
+  font-size: 14px;
   color: var(--Slightly-transparent-white);
   padding-top: 0.5rem;
   font-weight: 100;
@@ -116,7 +124,7 @@ h2 {
   font-weight: 600;
   text-align: left;
   font-family: "Inter", sans-serif;
-  font-size: 28px;
+  font-size: 34px;
 }
 
 .footer {
@@ -132,6 +140,7 @@ h2 {
   font-size: 18px;
   text-align: center;
   margin: 0 auto;
+  color: var(--White);
 }
 
 .attribution a {
@@ -143,59 +152,75 @@ h2 {
 @media screen and (max-width: 700px) {
   .hero-card {
     flex-direction: column-reverse;
-    width: 60%;
- 
-    
+    width: 100%;
+    height: 95vh;
+    margin-top: 4rem;
+    /* order: 2; */
   }
- 
-  .section {
+
+  body {
+    height: 100vh;
     display: flex;
-    gap: none;
-    width: 70%;
-    /* height: 0.5rem; */
+    align-items: center;
+    text-align: left;
+  }
+  .section {
     border-radius: 0px 0px 10px 10px;
-    margin-bottom: 50rem;
+    width: 70%;
   }
 
   .first-p {
     font-size: 14px;
-    justify-self: center;
-    padding-left: 1.5rem;
+    justify-content: center;
+    font-weight: lighter;
     text-align: center;
-   
+    
   }
 
   img {
-    height: 190px;
     width: 100%;
   }
   .image {
     border-radius: 10px 10px 0 0;
     margin-top: 5rem;
-    width: 86%;
+    width: 315px;
   }
   p {
     line-height: 1.5;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bolder;
     text-align: center;
-    justify-self: center;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 2px;
+  }
+
+  .x {
+    font-size: 10px;
   }
 
   .footer {
     display: grid;
     justify-content: center;
     text-align: center;
-    padding-right: 3rem;
-    gap: 1rem;
+    padding-right: 2rem;
+    gap: 1px;
+    
   }
 
   h1,
   h2 {
     text-align: center;
-    font-size: 22px;
-    padding-right: 1rem;
+    align-content: center;
+    font-size: 24px;
+    justify-content: left;
+  }
+
+  .attribution {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    padding-left: 4rem;
+    justify-content: center;
   }
 }
